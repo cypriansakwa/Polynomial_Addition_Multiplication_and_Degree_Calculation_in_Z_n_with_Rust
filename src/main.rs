@@ -2,7 +2,7 @@ fn main() {
     // Define polynomials P(x) = 5x^2 - 4x + 2 and Q(x) = x^3 - 2x^2 + 5 in Z_6[x]
     let p = vec![2, -4, 5];  // Coefficients of P(x): 2 + (-4)x + 5x^2
     let q = vec![5, 0, -2, 1]; // Coefficients of Q(x): 5 + (-2)x^2 + x^3
-    
+    //$f,g\in \mathbb{Z}_{17}[x]$ with $f(x) = 3x^3-15x^2+12x - 13$ and $g(x) = -7x^3-6x^2 + 10$
     // Perform addition and multiplication modulo 6
     let sum = add_polynomials_mod(&p, &q, 6);
     let product = multiply_polynomials_mod(&p, &q, 6);
